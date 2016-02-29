@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Email Blaster</h1>
+    <p class="lead">Open source Asp.net MVC 5 web application for sending email blast using SendGrid platform</p>
+    <p>First things first, open web.config and update the following:</p>
+    <ul>
+        <li>1. Replace the ConnectionString with the Username and Password to initialize the EmailBlaster SQL Database. <small>(It is assumed that you already created the SQL Server User login with dbcreator role)</small></li>
+        <li>2. Replace SendgridAPIKey with your own SendGrid key. <small>(It is assumed that you have already have an account, paid or non-paid, in SendGrid and know your assigned API keys)</small></li>
+        <li>3. <a href="/Contact/CreateBulk" class="btn btn-primary btn-lg">Start Adding Contacts &raquo;</a></li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Recent Email Activity</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Campaigns</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contacts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>   
+    </div>
+</div>

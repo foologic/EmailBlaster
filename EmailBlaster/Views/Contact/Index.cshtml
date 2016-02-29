@@ -1,0 +1,93 @@
+﻿@model IEnumerable<EmailBlaster.Models.Contact>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+@Html.ActionLink("Create New", "Create")  |  @Html.ActionLink("Bulk Upload Contacts", "CreateBulk")  |  @Html.ActionLink("Unsubscribe Contacts", "Unsubscribe")
+</p>
+
+@using (Html.BeginForm())
+{
+    <div>
+        Filter By Name: @Html.TextBox("SearchString")
+        <input type="submit" value="Search"/>
+    </div>
+}
+<table class="table table-condensed">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateDeactivated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unsubscribed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bounced)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MarkedSpam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvalidMailbox)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAdded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateDeactivated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unsubscribed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bounced)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MarkedSpam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InvalidMailbox)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+</table>

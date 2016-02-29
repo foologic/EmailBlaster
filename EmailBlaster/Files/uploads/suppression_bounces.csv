@@ -1,0 +1,160 @@
+status,SuppressionReason,Email,created
+5.4.7,554 5.4.7 [internal] exceeded max time without delivery,malcolm.greentree@atlantis.co.ac,1455917077
+5.1.1,550 5.1.1 <crosson78@aol.com>: Recipient address rejected: aol.com ,crosson78@aol.com,1455890949
+550,550 #5.1.0 Address rejected. ,mitch.day@chevron.com,1455890937
+5.1.1,550 5.1.1 Recipient unknown ,rtaylor@btes.tv,1455890846
+5.5.4,501 5.5.4 Invalid arguments,fresh1m.d.m@hotmail.com,1455890783
+550,550 Requested action not taken: mailbox unavailable ,thunderbolt361@gmx.com,1455890761
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 x192si16847971oif.66 - gsmtp ,russellstubbs1@gmail.com,1455890760
+5.7.1,"554 5.7.1 Your mail could not be delivered because the     recipient is only accepting mail from specific email addresses. If you feel     you received this in error, please contact the recipient directly and ask     them to check their email settings.",iboscard@aol.com,1455890688
+5.5.4,501 5.5.4 Invalid arguments,sylvainguyon@hotmail.ca,1455890675
+554,554 delivery error: dd Sorry your message to phattonasap@yahoo.com cannot be delivered. This account has been disabled or discontinued [#101]. - mta1528.mail.gq1.yahoo.com ,phattonasap@yahoo.com,1455890649
+550,550 No such user (scockrell@hannibalclinic.com) ,scockrell@hannibalclinic.com,1455890645
+554,554 delivery error: dd This user doesn't have a yahoo.com account (original_condepts_accessories@yahoo.com) [0] - mta1364.mail.ne1.yahoo.com ,original_condepts_accessories@yahoo.com,1455890619
+5.1.1,550 5.1.1 <lizcreation@comcast.net> Account not available ,lizcreation@comcast.net,1455890605
+5.1.1,550 5.1.1 unknown or illegal alias: rls1001@verizon.net ,rls1001@verizon.net,1455890597
+554,554 delivery error: dd This user doesn't have a yahoo.com account (lsalouj@yahoo.com) [0] - mta1198.mail.gq1.yahoo.com ,lsalouj@yahoo.com,1455890597
+550,550 Invalid recipient: <paul_mickey@suddenlink.net> ,paul_mickey@suddenlink.net,1455890585
+5.1.1,550 5.1.1 <jason@sillyfast.com> Recipient not found.  <http://x.co/irbounce> ,jason@sillyfast.com,1455890557
+550,"550 <lvandruten@mobilcomm.com>, Recipient unknown ",lvandruten@mobilcomm.com,1455890538
+5.0.0,5.4.7 - Delivery expired (message too old) [Default] 'TimeoutError' (delivery attempts: 68),steven.berg@vb.socom.mil,1455561431
+5.1.1,550 5.1.1 <saggu@telus.net> recipient rejected ,saggu@telus.net,1455302264
+5.0.0,,kimberly.williams@fidelissc.com,1455302218
+5.7.1,554 5.7.1 <h-drider@telebeep.com>: Recipient address rejected: user h-drider@telebeep.com does not exist ,h-drider@telebeep.com,1455302152
+5.1.1,550 5.1.1 <tjanderson4@myfairpoint.net>... User unknown ,tjanderson4@myfairpoint.net,1455302143
+550,550 Requested action not taken: mailbox unavailable ,matthewgauer@hotmail.com,1455302143
+550,550 #5.1.0 Address rejected. ,roger.drouin76@cgocable.ca,1455302141
+550,550 [SUSPEND] Mailbox currently suspended - Please contact correspondent directly ,franky-21@att.net,1455302141
+554,554 delivery error: dd Sorry your message to howard.lynn@yahoo.com cannot be delivered. This account has been disabled or discontinued [#101]. - mta1066.mail.gq1.yahoo.com ,howard.lynn@yahoo.com,1455302132
+550,550 Recipient Rejected: Mailbox would exceed maximum allowed storage ,richg@ticon.net,1455302132
+554,554 delivery error: dd This user doesn't have a yahoo.com account (mmannj@yahoo.com) [-5] - mta1391.mail.gq1.yahoo.com ,mmannj@yahoo.com,1455302127
+5.1.1,550 5.1.1 RESOLVER.ADR.RecipNotFound; not found,jason.ormiston@ssab.com,1455302127
+5.1.1,550 5.1.1 <h-t-walker@shaw.ca> recipient rejected ,h-t-walker@shaw.ca,1455302126
+554,554 delivery error: dd This user doesn't have a yahoo.com account (rwram_22@yahoo.com) [-5] - mta1550.mail.gq1.yahoo.com ,rwram_22@yahoo.com,1455302117
+5.1.1,550 5.1.1 <tabbycdnnc@aol.com>: Recipient address rejected: aol.com ,tabbycdnnc@aol.com,1455302117
+554,554 Invalid recipient ,dspenc10@rochester.rr.com,1455302104
+5.0.0,message text rejected by mail.cedarcomm.com:  579 message content is not acceptable here,fredf@cedarcomm.com,1455302093
+5.1.1,550 5.1.1 <boo.queen@aol.com>: Recipient address rejected: aol.com ,boo.queen@aol.com,1455302077
+5.1.1,550 5.1.1 RCP-P1 http://postmaster.facebook.com/response_codes?ip=167.89.16.17#rcp Recipient address does not exist ,jackmaher1949@facebook.com,1455302077
+554,554 delivery error: dd This user doesn't have a yahoo.com account (jadebewick33@yahoo.com) [0] - mta1376.mail.bf1.yahoo.com ,jadebewick33@yahoo.com,1453861252
+554,554 delivery error: dd This user doesn't have a yahoo.com account (brendansheehan77@yahoo.com) [0] - mta1073.mail.gq1.yahoo.com ,brendansheehan77@yahoo.com,1453861211
+554,554 delivery error: dd This user doesn't have a yahoo.com account (davmhags22@yahoo.com) [0] - mta1433.mail.gq1.yahoo.com ,davmhags22@yahoo.com,1453861201
+5.1.1,550 5.1.1 <spollack@cox.net> invalid recipient - Refer to Error Codes section at http://postmaster.cox.net/confluence/display/postmaster/Error+Codes for more information. ,spollack@cox.net,1453857656
+554,554 delivery error: dd This user doesn't have a yahoo.com account (aamedina2421@yahoo.com) [0] - mta1617.mail.gq1.yahoo.com ,aamedina2421@yahoo.com,1453857645
+554,554 delivery error: dd This user doesn't have a yahoo.com account (timmbaa6@yahoo.com) [-5] - mta1632.mail.gq1.yahoo.com ,timmbaa6@yahoo.com,1453857645
+550,550 Message rejected ,clarknrose@bellaliant.net,1453857645
+5.1.1,550 5.1.1 <kharrison88@cox.net> invalid recipient - Refer to Error Codes section at http://postmaster.cox.net/confluence/display/postmaster/Error+Codes for more information. ,kharrison88@cox.net,1453857644
+550,550 Requested action not taken: mailbox unavailable ,pampjilev@hotmail.com,1453857640
+554,554 delivery error: dd This user doesn't have a yahoo.com account (waynehuffman67@yahoo.com) [-5] - mta1399.mail.gq1.yahoo.com ,waynehuffman67@yahoo.com,1453857625
+554,554 delivery error: dd This user doesn't have a yahoo.com account (anthony_c_russo@yahoo.com) [-5] - mta1544.mail.ne1.yahoo.com ,anthony_c_russo@yahoo.com,1453854070
+550,550  mx2.tb.ukmail.iss.as9143.net bizsmtp Connection rejected. Your IP 167.89.10.181 is in RBL. Please see http://www.mail-abuse.com/cgi-bin/lookup?167.89.10.181 ,peter.ignatio@blueyonder.co.uk,1453854065
+554,554 delivery error: dd This user doesn't have a yahoo.com account (devlishgrneyes2003@yahoo.com) [-5] - mta1615.mail.gq1.yahoo.com ,devlishgrneyes2003@yahoo.com,1453854062
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 k77si3073663oib.148 - gsmtp ,tbishoo350@gmail.com,1453854043
+5.1.1,550 5.1.1 <jameskrummel@cox.net> invalid recipient - Refer to Error Codes section at http://postmaster.cox.net/confluence/display/postmaster/Error+Codes for more information. ,jameskrummel@cox.net,1453854025
+554,554 delivery error: dd This user doesn't have a yahoo.com account (www.bgrey25@yahoo.com) [0] - mta1081.mail.bf1.yahoo.com ,www.bgrey25@yahoo.com,1453854011
+550,550 Requested action not taken: mailbox unavailable ,moen09@hotmail.com,1453854000
+554,554 delivery error: dd This user doesn't have a yahoo.com account (tiimandcarielynch@yahoo.com) [0] - mta1539.mail.ne1.yahoo.com ,tiimandcarielynch@yahoo.com,1453853972
+5.1.1,550 5.1.1 <jdfnmnmdfvnmdf4@aol.com>: Recipient address rejected: aol.com ,jdfnmnmdfvnmdf4@aol.com,1453850454
+5.5.0,550-5.1.1 The email account that you tried to reach does not exist. Please try,nj18t@msn.com,1453850446
+5.1.1,550 5.1.1 <sal.ammirata@njct.biz> Recipient not found.  <http://x.co/irbounce> ,sal.ammirata@njct.biz,1453850446
+550,:98.129.185.131 does not like recipient.Remote host said: 550 5.7.1,tecnocomm@tecnocomm.net,1453850426
+5.7.1,"554 5.7.1 Your mail could not be delivered because the     recipient is only accepting mail from specific email addresses. If you feel     you received this in error, please contact the recipient directly and ask     them to check their email settings.",bowtibrwlr@aol.com,1453850426
+550,550 Requested action not taken: mailbox unavailable ,sven-em@hotmail.com,1453850426
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 n4si613101obq.48 - gsmtp ,mkeyser27@gmail.com,1453850422
+4.2.1,550 4.2.1 mailbox temporarily disabled: edbrmly@verizon.net ,edbrmly@verizon.net,1453850416
+5.1.1,550 5.1.1 User Unknown ,james.lawson@deepwater.com,1453850416
+5.1.1,550 5.1.1 unknown or illegal alias: davidbowling@icloud.com ,davidbowling@icloud.com,1453850416
+5.1.1,550 5.1.1 [R2] Recipient kat30mn@q.com does not exist here. ,kat30mn@q.com,1453850416
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 rl4si3240973oeb.36 - gsmtp ,eaier3512@gmail.com,1453850406
+5.1.1,550 5.1.1 <ddjh4@aol.com>: Recipient address rejected: aol.com ,ddjh4@aol.com,1453850406
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o6si2979237oig.40 - gsmtp ,albkelley8787@gmail.com,1453850406
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 e125si2982256oib.52 - gsmtp ,jc415runr@gmail.com,1453850400
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 a65si2966240oif.99 - gsmtp ,cwomack71599@gmail.com,1453850381
+554,554 delivery error: dd This user doesn't have a yahoo.com account (titinlugi@yahoo.com) [0] - mta1499.mail.gq1.yahoo.com ,titinlugi@yahoo.com,1453850375
+5.1.1,550 5.1.1 <johnniewjr@aol.com>: Recipient address rejected: aol.com ,johnniewjr@aol.com,1453850372
+5.1.1,550 5.1.1 <ericjones4121@aol.com>: Recipient address rejected: aol.com ,ericjones4121@aol.com,1453850372
+5.1.1,550-5.1.1 The email account that you tried to reach does  not exist. Please try the recipient's email address for typos or spaces. Learn  more at https://support.google.com/mail/answer/6596 ue3si4824136pab.154 - gs,nicolasgriffen@me.com,1453850366
+5.1.1,550 5.1.1 RESOLVER.ADR.RecipNotFound; not found,paul.mercer@fauquiercounty.gov,1453847011
+5.1.1,550 5.1.1 <hjskd@aol.com>: Recipient address rejected: aol.com ,hjskd@aol.com,1453846852
+5.1.1,550 5.1.1 Recipient does not exist here ,gpeer@windstream.net,1453846852
+550,550 Requested action not taken: mailbox unavailable ,mkizenathi@mail.com,1453846852
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 nv6si474630obc.94 - gsmtp ,ramirez.joey63077@gmail.com,1453846852
+550,550 Invalid recipient ,mark.robinson@tellabs.com,1453846837
+5.1.1,550 5.1.1 Recipient does not exist here ,gig@valornet.com,1453846837
+5.1.1,550 5.1.1 User is disabled ,4jed@windstream.net,1453846837
+5.1.10,550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup,sgrable1@student.gsu.edu,1453846830
+5.1.1,550 5.1.1 [R2] Recipient herner1102@zoominternet.net does not exist here. ,herner1102@zoominternet.net,1453846825
+5.0.0,,kball@acheronengineering.com,1453846825
+5.1.1,550 5.1.1 <geo.renovello@tiscali.it> recipient disabled ,geo.renovello@tiscali.it,1453846820
+5.1.1,User janet.belschwender (janet.belschwender@  ricoh-usa.com) not listed in Domino Directory,janet.belschwender@ricoh-usa.com,1453846815
+5.0.0,550 5.0.0 <igsmith@uvm.edu>... User unknown ,igsmith@uvm.edu,1453846815
+5.1.1,550 5.1.1 unknown or illegal alias: famillesplante@videotron.ca ,famillesplante@videotron.ca,1453846813
+550,550 Invalid recipient: <tufflx@bell.net> ,tufflx@bell.net,1453846813
+550,550 Rejected ,cablegd1@mymetronet.net,1453846813
+5.1.1,550 5.1.1 <lroybrisbon@gail.com> Recipient not found.  <http://x.co/irbounce> ,lroybrisbon@gail.com,1453846813
+5.1.1,550 5.1.1 <poodlepurrm@aol.com>: Recipient address rejected: aol.com,gmartin2@hot.rr.com,1453846807
+5.1.1,550 5.1.1 <djhdj@aol.com>: Recipient address rejected: aol.com ,djhdj@aol.com,1453846807
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 nv6si474631obc.94 - gsmtp ,sdonaho@cmaaccess.com,1453846807
+5.1.1,550 5.1.1 <b.mccartybaird@aol.com>: Recipient address rejected: aol.com ,b.mccartybaird@aol.com,1453846807
+5.1.1,550 5.1.1 [R2] Recipient rcabarles@centurylink.net does not exist here. ,rcabarles@centurylink.net,1453846807
+550,550 Invalid recipient: <ian.moyer@sympatico.ca> ,ian.moyer@sympatico.ca,1453846807
+5.1.1,550 5.1.1 Recipient does not exist here ,momentofglory@windstream.net,1453846801
+550,550 Invalid recipient: <patrick.ferland@sympatico.ca> ,patrick.ferland@sympatico.ca,1453846800
+5.1.1,"unknown user: ""absolutrestorati@qwestoffice.net""",absolutrestorati@qwestoffice.net,1453846794
+5.1.1,550 5.1.1 [R2] Recipient ozzies3@embarqmail.com does not exist here. ,ozzies3@embarqmail.com,1453846789
+5.1.1,550 5.1.1 <ochrisman@corcntr.com> Recipient not found.  <http://x.co/irbounce> ,ochrisman@corcntr.com,1453846789
+554,554 delivery error: dd Sorry your message to jackbobo@yahoo.com cannot be delivered. This account has been disabled or discontinued [#102]. - mta1462.mail.bf1.yahoo.com ,jackbobo@yahoo.com,1453846789
+550,550 thomasprendergast@earthlink.net...User account is unavailable ,thomasprendergast@earthlink.net,1453846789
+5.1.1,550 5.1.1 <mikestark@mchsi.com>Suspect mail not accepted for Mediacom domains or invalid recipient - POL008 ,mikestark@mchsi.com,1453846789
+554,554 delivery error: dd This user doesn't have a rogers.com account (loumar@rogers.com) [0] - mta1012.rog.mail.bf1.yahoo.com ,loumar@rogers.com,1453846789
+5.1.1,550 5.1.1 unknown or illegal alias: lucie.beauvais@videotron.ca ,lucie.beauvais@videotron.ca,1453846789
+550,550 Invalid mailbox: cthornburg@hawaii.rr.com ,cthornburg@hawaii.rr.com,1453846789
+554,554 Invalid recipient ,krichard21@triad.rr.com,1453846789
+550,550 Invalid mailbox: hcarlos2@nyc.rr.com ,hcarlos2@nyc.rr.com,1453846786
+5.1.1,550 5.1.1 Recipient gabrielaguilar@q.com does not exist here ,gabrielaguilar@q.com,1453846786
+5.1.1,550 5.1.1 User Unknown ,antonio.d.orr@bankofamerica.com,1453846786
+5.1.1,550 5.1.1 [R2] Recipient trujillotribe@q.com does not exist here. ,trujillotribe@q.com,1453846786
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 j3si3112426oeq.41 - gsmtp ,randya@jbrosbakerysupply.com,1453846786
+554,554 delivery error: dd Sorry your message to dyurko@rogers.com cannot be delivered. This account has been disabled or discontinued [#102]. - mta1009.rog.mail.bf1.yahoo.com ,dyurko@rogers.com,1453846786
+5.1.1,550 5.1.1 [R2] Recipient cajunyorkies@centurytel.net does not exist here. ,cajunyorkies@centurytel.net,1453846777
+5.1.10,550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup,todd@bms-oregon.com,1453846777
+550,550  mx7.mnd.ukmail.iss.as9143.net bizsmtp Connection rejected. Your IP 167.89.10.181 is in RBL. Please see http://www.mail-abuse.com/cgi-bin/lookup?167.89.10.181 ,cammy72@ntlworld.com,1453846775
+550,550 Mailbox unavailable <j.c.moore@inbox.com> ,j.c.moore@inbox.com,1453846775
+5.1.10,550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup,cdaley@hi-techroofing.com,1453846775
+550,550 No such user (jackr@ourbank.com) ,jackr@ourbank.com,1453846762
+550,550 malibucoopers@earthlink.net...User account is unavailable ,malibucoopers@earthlink.net,1453846762
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2847269oia.81 - gsmtp ,baronsilas5@gmail.com,1453846762
+5.1.1,550 5.1.1 AmJz1s02S2AmktS01mJzwK Invalid recipient: <robinson.lance@charter.net> E3210 ,robinson.lance@charter.net,1453846762
+5.0.0,,cops2swabs@wavecable.com,1453846762
+5.1.1,550 5.1.1 Recipient does not exist here ,clarence396@windstream.net,1453846762
+550,550 otnimj@earthlink.net...User account is unavailable ,otnimj@earthlink.net,1453846762
+5.1.10,550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup,heidi.dickens@emsi-air.com,1453845911
+550,"550  mwinf5c12 ME Service refuse. Veuillez essayer plus tard. Service refused, please try later. OFR006_103 198.21.0.135 [103] ",alain.gros-desormeaux@wanadoo.fr,1453845903
+5.1.1,550 5.1.1 <julian@thelab.ca> Recipient not found.  <http://x.co/irbounce> ,julian@thelab.ca,1453845903
+4.2.1,550 4.2.1 mailbox temporarily disabled: redmond5459@verizon.net ,redmond5459@verizon.net,1453845892
+5.1.1,550 5.1.1 User Unknown ,royst@navcanada.ca,1453845175
+554,554 delivery error: dd This user doesn't have a yahoo.com account (aannstrick32506@yahoo.com) [0] - mta1243.mail.bf1.yahoo.com ,aannstrick32506@yahoo.com,1453845171
+5.1.1,550 5.1.1 RESOLVER.ADR.RecipNotFound; not found,tal@gypsy05.com,1453845171
+554,554 delivery error: dd This user doesn't have a yahoo.com account (crkondash675@yahoo.com) [-5] - mta1643.mail.gq1.yahoo.com ,crkondash675@yahoo.com,1453845171
+550,550 stm99@earthlink.net...Due to extended inactivity new mail is not currently being accepted for this mailbox. ,stm99@earthlink.net,1453845160
+5.2.1,,emasluk@chartermi.net,1453845146
+550,550 Invalid mailbox: tcurtright@neb.rr.com ,tcurtright@neb.rr.com,1453845142
+554,554 delivery error: dd This user doesn't have a yahoo.com account (miltonhuskey@yahoo.com) [0] - mta1579.mail.bf1.yahoo.com ,miltonhuskey@yahoo.com,1453845142
+550,550 <joemuller@vantasticvans.com> No such user here ,joemuller@vantasticvans.com,1453845129
+550,"550  mwinf5c12 ME Service refuse. Veuillez essayer plus tard. Service refused, please try later. OFR006_103 198.21.0.135 [103] ",erick.malidor@wanadoo.fr,1453845121
+5.1.1,550 5.1.1 <cool13g@aol.com>: Recipient address rejected: aol.com ,cool13g@aol.com,1453845116
+554,554 delivery error: dd This user doesn't have a yahoo.com account (connie8182@yahoo.com) [0] - mta1415.mail.gq1.yahoo.com ,connie8182@yahoo.com,1453845116
+554,554 delivery error: dd This user doesn't have a rogers.com account (dhuot0546@rogers.com) [0] - mta1000.rog.mail.bf1.yahoo.com ,dhuot0546@rogers.com,1453845099
+5.1.1,550 5.1.1 <ctpci94@aol.com>: Recipient address rejected: aol.com ,ctpci94@aol.com,1453845087
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 g6si3042178oel.75 - gsmtp ,jaykay824@gmail.com,1453845087
+554,554 delivery error: dd This user doesn't have a yahoo.com account (locomoco23@yahoo.com) [-5] - mta1448.mail.gq1.yahoo.com ,locomoco23@yahoo.com,1453845087
+554,554 delivery error: dd Sorry your message to paulcclark@rogers.com cannot be delivered. This account has been disabled or discontinued [#102]. - mta1011.rog.mail.bf1.yahoo.com ,paulcclark@rogers.com,1453845087
+554,554 delivery error: dd This user doesn't have a yahoo.com account (dylan.messerschmidt@yahoo.com) [0] - mta1187.mail.bf1.yahoo.com ,dylan.messerschmidt@yahoo.com,1453845081
+550,550 Invalid recipient: <r.arruda@sympatico.ca> ,r.arruda@sympatico.ca,1453845056
+5.1.10,550 5.1.10 RESOLVER.ADR.RecipientNotFound; Recipient not found by SMTP address lookup,gene.stokes@rangerconstruction.com,1453845052
+550,550 bonjonski@mindspring.com...User account is unavailable ,bonjonski@mindspring.com,1453845050
+550,550 Service Unavailable ,cwood0714@netzero.com,1453845050
+5.1.1,550 5.1.1 RESOLVER.ADR.RecipNotFound; not found,russell.petit@kimball.com,1453845013
+5.2.1,550 5.2.1 The email account that you tried to reach is disabled. f64si2792014oia.65 - gsmtp ,taylo169@unlv.nevada.edu,1453845013
+550,550 #5.1.0 Address rejected. ,jeamon2@cogeco.ca,1453845013
+4.2.1,550 4.2.1 mailbox temporarily disabled: jagnew74@verizon.net ,jagnew74@verizon.net,1453845013

@@ -1,0 +1,60 @@
+﻿@using EmailBlaster.ViewModels
+@model CampaignViewModel
+@{
+    ViewBag.Title = "Edit";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    @Html.HiddenFor(m => m.Campaign.Id)
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Campaign.Name)
+                @Html.TextBoxFor(m => m.Campaign.Name, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Campaign.Sender)
+                @Html.TextBoxFor(m => m.Campaign.Sender, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Campaign.Subject)
+                @Html.TextBoxFor(m => m.Campaign.Subject, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.SendTestEmail)
+                @Html.TextBoxFor(m => m.SendTestEmail, new { @class = "form-control" })
+                <input type="submit" class="btn btn-default" value="Send Test Email" name="command" />
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Campaign.DateScheduled)
+                @Html.TextBoxFor(m => m.Campaign.DateScheduled, new { @class = "form-control" })
+                <input type="submit" class="btn btn-default" value="Schedule Email" name="command" />
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="Save" name="command" />
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="Send Now" name="command" />
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="">
+                @Html.LabelFor(m => m.Campaign.HtmlBody)
+                @Html.TextAreaFor(m => m.Campaign.HtmlBody, new {@class = ""})
+            </div>
+            <div class="">
+                @Html.LabelFor(m => m.Campaign.TextBody)
+                @Html.TextAreaFor(m => m.Campaign.TextBody, new { @class = "" })
+            </div>
+        </div>
+    </div>
+}
+
+
+
+

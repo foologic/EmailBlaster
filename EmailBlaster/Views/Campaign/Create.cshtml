@@ -1,0 +1,25 @@
+﻿@model CampaignViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@Html.Partial("_CampaignEditor", Model)
+
+
+@section css {
+    @Styles.Render("http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css")
+}
+
+@*wrap in sections so this executes after all scripts are loaded*@
+@section scripts {
+    @Scripts.Render("http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js")
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $("#@Html.IdFor(x=>x.Campaign.HtmlBody)").summernote();
+            });
+    </script>
+}
+

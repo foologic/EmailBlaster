@@ -1,0 +1,32 @@
+﻿@model IList<EmailBlaster.Models.Campaign>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Campaigns</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Sender</th>
+                <th>Date Created</th>
+                <th>Date Sched.</th>
+                <th>Date Sent</th>
+                <th>Edit</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Sender</td>
+                    <td>@item.DateCreated</td>
+                    <td>@item.DateScheduled</td>
+                    <td>@item.DateSent</td>
+                    <td>@Html.ActionLink("edit", "Edit", new { Id = item.Id })</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
