@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Edit";
 }
-
+<div class="alert-success">@TempData["SuccessMessage"]</div>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()

@@ -49,7 +49,7 @@ namespace EmailBlaster.Controllers
                 // get existing campaign
                 var o = new Campaign();
 
-                // jason todo: use automapper here or tryupdateodel
+                // todo: use automapper here or tryupdateodel
                 o.Name = model.Campaign.Name;
                 o.Sender = model.Campaign.Sender;
                 o.Subject = model.Campaign.Subject;
@@ -59,9 +59,15 @@ namespace EmailBlaster.Controllers
 
                 db.Campaigns.Add(o);
                 await db.SaveChangesAsync();
-            }
 
-            return View();
+                TempData["SuccessMessage"] = "Campaign successfully created.";
+
+                return RedirectToAction("Edit", new {Id = o.Id});
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
 
@@ -78,16 +84,16 @@ namespace EmailBlaster.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ValidateInput(false)]
-        public ActionResult Edit(CampaignViewModel model, string command)
+        public async Task<ActionResult> Edit(CampaignViewModel model, string command)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
                     // get existing campaign
-                    var o = db.Campaigns.SingleOrDefault(x => x.Id == model.Campaign.Id);
+                    var o = await db.Campaigns.SingleOrDefaultAsync(x => x.Id == model.Campaign.Id);
 
-                    // jason todo: use automapper here or tryupdateodel
+                    // todo: use automapper here 
                     o.Name = model.Campaign.Name;
                     o.Sender = model.Campaign.Sender;
                     o.Subject = model.Campaign.Subject;
@@ -99,19 +105,29 @@ namespace EmailBlaster.Controllers
                     switch (command)
                     {
                         case "Send Test Email":
-                            EmailHelper.SendEmail(model.Campaign, model.SendTestEmail.Split(',',';') , _sendgridapikey);
+                            EmailHelper.SendEmail(model.Campaign, model.SendTestEmail.Split(',', ';'), _sendgridapikey);
+                            TempData["SuccessMessage"] = "Test email sent successfully.";
                             break;
                         case "Schedule Email":
+                            TempData["SuccessMessage"] = "Email successfully  scheduled.";
                             break;
                         case "Save":
+                            TempData["SuccessMessage"] = "Campaign saved successfully.";
                             break;
                         case "Send Now":
                             o.DateCreated = DateTime.Now;
                             SendCampaign(o);
+                            TempData["SuccessMessage"] = "Campaign sent successfully.";
                             break;
                     }
 
-                    db.SaveChanges();
+                    await db.SaveChangesAsync();
+
+                    return RedirectToAction("Edit", new {Id = o.Id});
+                }
+                else
+                {
+                    return View(model);
                 }
             }
             catch (Exception)
@@ -156,9 +172,9 @@ namespace EmailBlaster.Controllers
                 skip += _emailbatchcount;
             }
 
-            Debug.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-            Debug.WriteLine(counttotal);
-            Debug.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            Debug.WriteLine("================================");
+            Debug.WriteLine("Total Emails Sent: {counttotal}");
+            Debug.WriteLine("================================");
         }
 
 
