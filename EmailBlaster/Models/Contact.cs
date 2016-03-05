@@ -13,7 +13,7 @@ namespace EmailBlaster.Models
             DateAdded = DateTime.Now;
         }
 
-        [Required]
+        [Key]
         public int Id { get; set; }
 
         [Required]

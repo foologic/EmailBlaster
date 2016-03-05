@@ -13,7 +13,6 @@ namespace EmailBlaster.ViewModels
         public Campaign Campaign { get; set; }
 
         [EmailAddress(ErrorMessage = "Invalid Sender Email")]
-        [DefaultValue("jason@onlinecarstereo.com")]
         public string SendTestEmail { get; set; }
     }
 }

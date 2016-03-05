@@ -3,7 +3,7 @@
     ViewBag.Title = "Unsubscribe";
 }
 
-<h2>Bulk Upload Contacts</h2>
+<h2>Bulk Unsubscribe Contacts</h2>
 <div class="alert-success">@ViewBag.Message</div>
 
 @using (Html.BeginForm("Unsubscribe", "Contact", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -11,26 +11,26 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Bulk Unsubscribe</h4>
+        <h4>CSV File must contain the following header columns [Email,SuppressionReason]</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         <div class="form-group">
-            @Html.Label("select unsubscribe reason:", new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            @Html.Label("select unsubscribe reason:", new { @class = "control-label col-md-3" })
+            <div class="col-md-09">
                 @Html.DropDownListFor(x => x.SuppresionReason, Model.SuppresionReasonList)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.Label("select file to upload:", new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            @Html.Label("select file to upload:", new { @class = "control-label col-md-3" })
+            <div class="col-md-09">
                 <input type="file" id="Avatar" name="upload" />
             </div>
         </div>
 
         <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
+            <div class="col-md-offset-3 col-md-9">
                 <input type="submit" value="Upload" class="btn btn-default" />
             </div>
         </div>

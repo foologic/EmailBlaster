@@ -15,12 +15,9 @@ namespace EmailBlaster.Helpers
         {
             using (StreamReader sr = new StreamReader(filename))
             {
-                using (var csv = new CsvReader(sr))
+                using (var csv =  GetCsvReader(sr, new ContactMap()))
                 {
-                    csv.Configuration.RegisterClassMap(new ContactMap());
-
                     return csv.GetRecords<Contact>().ToList();
-
                 }
             }
         }
@@ -29,14 +26,23 @@ namespace EmailBlaster.Helpers
         {
             using (StreamReader sr = new StreamReader(filename))
             {
-                using (var csv = new CsvReader(sr))
+                using (var csv = GetCsvReader(sr, new UnsubsContactMap()))
                 {
-                    csv.Configuration.RegisterClassMap(new UnsubsContactMap());
-
                     return csv.GetRecords<Contact>().ToList();
 
                 }
             }
+        }
+
+        private static CsvReader GetCsvReader(StreamReader sr, CsvClassMap mapper)
+        {
+            var csv = new CsvReader(sr);
+            csv.Configuration.IsHeaderCaseSensitive = false;
+            csv.Configuration.WillThrowOnMissingField = false; // set true to enforce required columns
+
+            csv.Configuration.RegisterClassMap(mapper);
+            
+            return csv;
         }
     }
 
@@ -46,9 +52,9 @@ namespace EmailBlaster.Helpers
     {
         public ContactMap()
         {
-            Map(x => x.Email);
-            Map(x => x.FirstName);
-            Map(x => x.LastName);
+            Map(x => x.Email).Name("Email");
+            Map(x => x.FirstName).Name("FirstName", "First Name");
+            Map(x => x.LastName).Name("LastName", "First LastName");
         }
     }
 
@@ -56,8 +62,8 @@ namespace EmailBlaster.Helpers
     {
         public UnsubsContactMap()
         {
-            Map(x => x.Email);
-            Map(x => x.SuppressionReason);
+            Map(x => x.Email).Name("Email");
+            Map(x => x.SuppressionReason).Name("SuppressionReason", "Suppression Reason");
         }
     }
 }

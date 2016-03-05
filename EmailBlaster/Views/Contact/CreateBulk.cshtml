@@ -10,7 +10,8 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>Contact</h4>
+        <h4>CSV File must contain the following header columns [Email,FirstName,LastName]</h4>
+        <small>*Email column is required.</small>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 

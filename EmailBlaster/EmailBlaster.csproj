@@ -297,6 +297,7 @@
     <Folder Include="Files\uploads\" />
     <Folder Include="Scripts\plugins\" />
     <Folder Include="Views\Test\" />
+    <Folder Include="Views\Tets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

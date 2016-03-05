@@ -46,15 +46,15 @@ namespace EmailBlaster.Controllers
         {
             if (ModelState.IsValid)
             {
-                // get existing campaign
                 var o = new Campaign();
 
-                // todo: use automapper here or tryupdateodel
+                // todo: use automapper here 
                 o.Name = model.Campaign.Name;
                 o.Sender = model.Campaign.Sender;
                 o.Subject = model.Campaign.Subject;
                 o.HtmlBody = model.Campaign.HtmlBody;
                 o.TextBody = model.Campaign.TextBody;
+                o.DateCreated = DateTime.Now;
                 o.DateScheduled = model.Campaign.DateScheduled;
 
                 db.Campaigns.Add(o);
@@ -62,6 +62,7 @@ namespace EmailBlaster.Controllers
 
                 TempData["SuccessMessage"] = "Campaign successfully created.";
 
+                // use PRG(post redirect get) pattern
                 return RedirectToAction("Edit", new {Id = o.Id});
             }
             else
