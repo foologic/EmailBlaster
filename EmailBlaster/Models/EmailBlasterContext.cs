@@ -1,5 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Web.Profile;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmailBlaster.Models
 {
