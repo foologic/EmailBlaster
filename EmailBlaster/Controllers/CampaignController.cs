@@ -106,7 +106,7 @@ namespace EmailBlaster.Controllers
                     switch (command)
                     {
                         case "Send Test Email":
-                            EmailHelper.SendEmail(model.Campaign, model.SendTestEmail.Split(',', ';'), _sendgridapikey);
+                            SendTestEmail(model, _sendgridapikey);
                             TempData["SuccessMessage"] = "Test email sent successfully.";
                             break;
                         case "Schedule Email":
@@ -139,6 +139,14 @@ namespace EmailBlaster.Controllers
             return View(model);
         }
 
+        private void SendTestEmail(CampaignViewModel  model, string apiKey)
+        {
+            foreach(var email in model.SendTestEmail.Split(',', ';'))
+            {
+                EmailHelper.SendEmail(model.Campaign, email, _sendgridapikey);
+            }
+        }
+
         private void SendCampaign(Campaign campaign)
         {
             // get how many contacts
@@ -161,7 +169,7 @@ namespace EmailBlaster.Controllers
 
                 foreach (var c in _contacts)
                 {
-                    EmailHelper.SendEmail(campaign, c.Email.Split(',', ';'), _sendgridapikey);
+                    EmailHelper.SendEmail(campaign, c.Email, _sendgridapikey);
 
                     Debug.WriteLine(c.Email);
                     counttotal++;

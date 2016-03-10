@@ -8,20 +8,22 @@ using System.Net.Mail;
 using SendGrid;
 using EmailBlaster.Models;
 using SendGrid.SmtpApi;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace EmailBlaster.Helpers
 {
     public static class EmailHelper
     {
-        public static void SendEmail(Campaign model, string[] recipients, string sendgridapiKey)
+        public static void SendEmail(Campaign model, string emailTo, string sendgridapiKey)
         {
-            var message = CreateSendgridMessage(model, recipients);
+            var message = CreateSendgridMessage(model, emailTo);
 
             var transportWeb = new SendGrid.Web(sendgridapiKey);
             transportWeb.DeliverAsync(message);
         }
 
-        public static SendGridMessage CreateSendgridMessage(Campaign campaign, string[] recipients)
+        public static SendGridMessage CreateSendgridMessage(Campaign campaign, string emailTo)
         {
             var myMessage = new SendGridMessage();
 
@@ -34,9 +36,9 @@ namespace EmailBlaster.Helpers
 
             myMessage.Headers.Add("X-SMTPAPI", xmstpapiJson);
 
-            // add from, receipients and subject
+            // add from, recipients and subject
             myMessage.From = new MailAddress(campaign.Sender);
-            myMessage.AddTo(recipients);
+            myMessage.AddTo(emailTo);
             myMessage.Subject = campaign.Subject;
 
             //Add the HTML and Text bodies

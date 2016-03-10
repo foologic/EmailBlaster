@@ -12,7 +12,7 @@ namespace EmailBlaster.ViewModels
     {
         public Campaign Campaign { get; set; }
 
-        [EmailAddress(ErrorMessage = "Invalid Sender Email")]
+        //[EmailAddress(ErrorMessage = "Invalid Sender Email")]
         public string SendTestEmail { get; set; }
     }
 }
