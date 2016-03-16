@@ -19,7 +19,7 @@ namespace EmailBlaster.Controllers
     public class CampaignController : Controller
     {
         private EmailBlasterContext db = new EmailBlasterContext();
-        private string _sendgridapikey = ConfigurationManager.AppSettings["SendGridAPIKey"];
+        private string _sendgridapikey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
         private int _emailbatchcount = Convert.ToInt32( ConfigurationManager.AppSettings["EmailBatchCount"]);
 
         // GET: Campaign
@@ -141,10 +141,11 @@ namespace EmailBlaster.Controllers
 
         private void SendTestEmail(CampaignViewModel  model, string apiKey)
         {
-            foreach(var email in model.SendTestEmail.Split(',', ';'))
-            {
-                EmailHelper.SendEmail(model.Campaign, email, _sendgridapikey);
-            }
+            //foreach(var email in model.SendTestEmail.Split(',', ';'))
+            //{
+            //    EmailHelper.SendEmail(model.Campaign, email, _sendgridapikey);
+            //}
+            EmailHelper.SendEmail(model.Campaign, model.SendTestEmail.Split(',',';'), _sendgridapikey);
         }
 
         private void SendCampaign(Campaign campaign)
@@ -167,13 +168,17 @@ namespace EmailBlaster.Controllers
 
                 IQueryable<Contact> _contacts = contacts.Skip(skip).Take(_emailbatchcount);
 
-                foreach (var c in _contacts)
-                {
-                    EmailHelper.SendEmail(campaign, c.Email, _sendgridapikey);
+                string[] recipients = _contacts.Select(x => x.Email).ToArray();
 
-                    Debug.WriteLine(c.Email);
-                    counttotal++;
-                }
+                EmailHelper.SendEmail(campaign, recipients, _sendgridapikey);
+
+                //foreach (var c in _contacts)
+                //{
+                //    EmailHelper.SendEmail(campaign, c.Email, _sendgridapikey);
+
+                //    Debug.WriteLine(c.Email);
+                //    counttotal++;
+                //}
 
                 // sleep for one second, SendGrid disallow more than 3K request per second
                 Thread.Sleep(1000);

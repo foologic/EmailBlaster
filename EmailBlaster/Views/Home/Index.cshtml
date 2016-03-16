@@ -5,10 +5,10 @@
 <div class="jumbotron">
     <h1>Email Blaster</h1>
     <p class="lead">Open source Asp.net MVC 5 web application for sending email blasts using SendGrid platform</p>
-    <p>First things first, open web.config and update the following:</p>
+    <p>First things first :</p>
     <ul>
-        <li>1. Replace the ConnectionString with the Username and Password to initialize the EmailBlaster SQL Database. <small>(It is assumed that you already created the SQL Server User login with dbcreator role)</small></li>
-        <li>2. Replace SendgridAPIKey with your own SendGrid key. <small>(It is assumed that you have already have an account, paid or non-paid, in SendGrid and know your assigned API keys)</small></li>
+        <li>1. Open web.config and replace the ConnectionString with the Username and Password to initialize the EmailBlaster SQL Database. <small>(It is assumed that you already created the SQL Server User login with dbcreator role)</small></li>
+        <li>2. Add SENDGRID_API_KEY environment variables and set the correct value. <small>(It is assumed that you have already have an account, paid or non-paid, in SendGrid and have generated your API key)</small></li>
         <li>3. Open Nuget Console and type: UPDATE-DATABASE</li>
         <li>4. Compile and Run application and 
             <a href="/Contact/CreateBulk" class="btn btn-primary btn-lg">Start Adding Contacts &raquo;</a>
