@@ -20,6 +20,8 @@ namespace EmailBlaster.Controllers
     {
         private EmailBlasterContext db = new EmailBlasterContext();
         private string _sendgridapikey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+        private string _smtpUser = Environment.GetEnvironmentVariable("SENDGRID_SMTP_USER");
+        private string _smtpPass = Environment.GetEnvironmentVariable("SENDGRID_SMTP_PASS");
         private int _emailbatchcount = Convert.ToInt32( ConfigurationManager.AppSettings["EmailBatchCount"]);
 
         // GET: Campaign
@@ -141,11 +143,7 @@ namespace EmailBlaster.Controllers
 
         private void SendTestEmail(CampaignViewModel  model, string apiKey)
         {
-            //foreach(var email in model.SendTestEmail.Split(',', ';'))
-            //{
-            //    EmailHelper.SendEmail(model.Campaign, email, _sendgridapikey);
-            //}
-            EmailHelper.SendEmail(model.Campaign, model.SendTestEmail.Split(',',';'), _sendgridapikey);
+            EmailHelper.SendViaSmtpWithRetry(model.Campaign, model.SendTestEmail.Split(',',';'), _smtpPass, _smtpUser);
         }
 
         private void SendCampaign(Campaign campaign)
@@ -156,7 +154,6 @@ namespace EmailBlaster.Controllers
             // get all 
             IQueryable<Contact> contacts = db.Contacts.Where(x => x.Active == true).OrderBy(x=>x.Email);
 
-            double counttotal = 0; // used for debugging only
             int skip = 0;
 
             // loop through all subscribers, by batches of N
@@ -170,15 +167,7 @@ namespace EmailBlaster.Controllers
 
                 string[] recipients = _contacts.Select(x => x.Email).ToArray();
 
-                EmailHelper.SendEmail(campaign, recipients, _sendgridapikey);
-
-                //foreach (var c in _contacts)
-                //{
-                //    EmailHelper.SendEmail(campaign, c.Email, _sendgridapikey);
-
-                //    Debug.WriteLine(c.Email);
-                //    counttotal++;
-                //}
+                EmailHelper.SendViaSmtpWithRetry(campaign, recipients, _smtpPass, _smtpUser);
 
                 // sleep for one second, SendGrid disallow more than 3K request per second
                 Thread.Sleep(1000);
