@@ -63,7 +63,7 @@ namespace EmailBlaster.Helpers
         public UnsubsContactMap()
         {
             Map(x => x.Email).Name("Email");
-            Map(x => x.SuppressionReason).Name("SuppressionReason", "Suppression Reason");
+            Map(x => x.SuppressionReason).Name("SuppressionReason", "Reason");
         }
     }
 }

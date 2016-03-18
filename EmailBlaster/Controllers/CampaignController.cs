@@ -143,7 +143,7 @@ namespace EmailBlaster.Controllers
 
         private void SendTestEmail(CampaignViewModel  model, string apiKey)
         {
-            EmailHelper.SendViaSmtpWithRetry(model.Campaign, model.SendTestEmail.Split(',',';'), _smtpPass, _smtpUser);
+            EmailHelper.SendViaSmtpWithRetry(model.Campaign, model.SendTestEmail.Split(',',';'), _smtpUser, _smtpPass);
         }
 
         private void SendCampaign(Campaign campaign)
@@ -167,7 +167,7 @@ namespace EmailBlaster.Controllers
 
                 string[] recipients = _contacts.Select(x => x.Email).ToArray();
 
-                EmailHelper.SendViaSmtpWithRetry(campaign, recipients, _smtpPass, _smtpUser);
+                EmailHelper.SendViaSmtpWithRetry(campaign, recipients, _smtpUser, _smtpPass);
 
                 // sleep for one second, SendGrid disallow more than 3K request per second
                 Thread.Sleep(1000);

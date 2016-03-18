@@ -1,4 +1,19 @@
-status,suppressionreason,email,created
+status,reason,email,created
+5.3.2,532 5.3.2 STOREDRV.Deliver; Missing or bad mailbox Database property,dani.denise@hotmail.com,1458172126
+550,550 Message rejected ,johnson.darren1@bellaliant.net,1458172052
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 x10si3491153pas.64 - gsmtp ,lukeex6666@gmail.com,1458171974
+5.3.2,532 5.3.2 STOREDRV.Deliver; Missing or bad mailbox Database property,lor076@hotmail.com,1458171868
+5.1.1,550 5.1.1 <lb@lbjamm.com>: Recipient address rejected: User unknown in relay recipient table ,lb@lbjamm.com,1458171833
+5.3.2,532 5.3.2 STOREDRV.Deliver; Missing or bad mailbox Database property,latour_autoaccess@hotmail.com,1458171811
+5.1.1,550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 q15si4392962igr.66 - gsmtp ,funklevi92@gmail.com,1458171756
+5.3.2,532 5.3.2 STOREDRV.Deliver; Missing or bad mailbox Database property,nelsonlarios@msn.com,1458171727
+550,550 Message rejected ,pjoyce@nb.sympatico.ca,1458171693
+5.1.1,550 5.1.1 <anehabordep@aol.com>: Recipient address rejected: aol.com ,anehabordep@aol.com,1458171535
+5.7.1,"554 5.7.1 Your mail could not be delivered because the     recipient is only accepting mail from specific email addresses. If you feel     you received this in error, please contact the recipient directly and ask     them to check their email settings.",mfelm@aol.com,1458171516
+550,550 jeansboy4@peoplepc.com...User account is unavailable ,jeansboy4@peoplepc.com,1458171516
+550,550 Message rejected ,victoria.maclean@islandtelecom.com,1458171477
+550,550 planefixer@earthlink.net...User account is unavailable ,planefixer@earthlink.net,1458171205
+550,550 Requested action not taken: mailbox unavailable ,ctownsel@hotmail.com,1458170872
 5.5.4,501 5.5.4 Invalid arguments,jradriana@hotmail.com,1456442922
 550,550 To header is too long ,carlos@firecontrol.net,1456442917
 550,550 To header is too long ,blake.goodman@1turnkeysolution.com,1456442883
