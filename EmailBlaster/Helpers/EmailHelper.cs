@@ -101,7 +101,7 @@ namespace EmailBlaster.Helpers
                     if (status == SmtpStatusCode.MailboxBusy ||
                         status == SmtpStatusCode.MailboxUnavailable)
                     {
-                        Console.WriteLine("Delivery failed - retrying in 5 seconds.");
+                        Console.WriteLine("SmtpFailedRecipientsException - retrying in 5 seconds.");
                         System.Threading.Thread.Sleep(5000);
                         client.Send(mail);
                     }
@@ -114,8 +114,11 @@ namespace EmailBlaster.Helpers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception caught in RetryIfBusy(): {0}",
-                        ex.ToString());
+                Console.WriteLine("Exception caught in SendViaSmtpWithRetry(): {0}", ex.ToString());
+
+                Console.WriteLine("Exception - retrying in 5 seconds.");
+                System.Threading.Thread.Sleep(5000);
+                client.Send(mail);
             }
 
         }

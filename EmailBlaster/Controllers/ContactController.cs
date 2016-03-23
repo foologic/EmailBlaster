@@ -27,7 +27,8 @@ namespace EmailBlaster.Controllers
         {
             if (page == null) page = 1;
 
-            var contacts = from c in db.Contacts select c;
+            // var contacts = from c in db.Contacts select c;
+            var contacts = db.Contacts.Take(100);
 
             // filter
             if (!string.IsNullOrEmpty(searchstring))
@@ -159,7 +160,7 @@ namespace EmailBlaster.Controllers
                         int count = 0;
                         foreach (var contact in contacts)
                         {
-                            var c = db.Contacts.SingleOrDefault(x => x.Email == contact.Email);
+                            var c = db.Contacts.SingleOrDefault(x => x.Email == contact.Email && x.Active==true);
 
                             if (c != null)
                             {
