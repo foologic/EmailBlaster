@@ -41,5 +41,7 @@ namespace EmailBlaster.Models
 
         [Display(Name = "Date Sent")]
         public DateTime? DateSent { get; set; }
+
+        public int EmailsSent { get; set; }
     }
 }
